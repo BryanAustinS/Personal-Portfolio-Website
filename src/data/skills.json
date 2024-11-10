@@ -9,7 +9,7 @@
     },
     {
         "title": "PHP",
-        "imageSrc": ""
+        "imageSrc": "skills/php.png"
     },
     {
       "title": "React",
@@ -21,18 +21,18 @@
     },
     {
       "title": "C++",
-      "imageSrc": "skills/graphql.png"
+      "imageSrc": "skills/cpp.png"
     },
     {
       "title": "Python",
-      "imageSrc": ""
+      "imageSrc": "skills/python.png"
     },
     {
       "title": "Dart",
-      "imageSrc": ""
+      "imageSrc": "skills/dart.png"
     },
     {
       "title": "Flutter",
-      "imageSrc": ""
+      "imageSrc": "skills/flutter.png"
     }
   ]

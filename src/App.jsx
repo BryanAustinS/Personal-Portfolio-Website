@@ -1,7 +1,8 @@
 import styles from './App.module.css'
 import { Navbar } from './components/Navbar/Navbar'
 import { Hero} from './components/Hero/Hero'
-import { Experience} from './components/Experience/Experience'
+import { Experience } from './components/Experience/experience';
+
 
 function App() {
 
