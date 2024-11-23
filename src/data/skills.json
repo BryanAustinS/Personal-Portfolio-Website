@@ -12,20 +12,24 @@
         "imageSrc": "skills/php.png"
     },
     {
+      "title": "C++",
+      "imageSrc": "skills/cpp2.png"
+    },
+    {
+      "title": "Python",
+      "imageSrc": "skills/python.png"
+    },
+    {
+      "title": "Java",
+      "imageSrc": "skills/java.png"
+    },
+    {
       "title": "React",
       "imageSrc": "skills/react.png"
     },
     {
       "title": "Node",
       "imageSrc": "skills/node.png"
-    },
-    {
-      "title": "C++",
-      "imageSrc": "skills/cpp.png"
-    },
-    {
-      "title": "Python",
-      "imageSrc": "skills/python.png"
     },
     {
       "title": "Dart",

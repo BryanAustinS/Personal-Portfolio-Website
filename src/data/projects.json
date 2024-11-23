@@ -1,0 +1,9 @@
+[
+    {
+        "title": "Fahrrarzt",
+        "imageSrc": "projects/fahrrarzt.png",
+        "description": "a Bicycle Reparation App",
+        "skills": ["Flutter", "Dart"],
+        "source": "https://github.com/BryanAustinS/HCI_Flutter_Project_Chiu_Suharta.git"
+    }
+]

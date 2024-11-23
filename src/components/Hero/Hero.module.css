@@ -33,6 +33,7 @@
     font-size: 30px;
     font-family: var(--font-roboto);
     margin-bottom: 32px;
+    
 }
 
 .contactBtn {
@@ -84,11 +85,11 @@
 
 .bottomBlur {
     position: absolute;
-    width: 70vw;
+    width: 50vw;
     height: 50vw;
     min-width: 350px;
     min-width: 250px;
-    top: 246px;
+    top: 250px;
     right: -25vw;
     border-radius: 764px;
     background: rgba(25,55,109,0.7);
