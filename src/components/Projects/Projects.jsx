@@ -1,34 +1,21 @@
-import React from 'react';
-import { getImageUrl } from '../../utils'
+import projects from "../../data/projects.json"
+import styles from "./Projects.module.css"
+import { getImageUrl } from "../../utils";
+import { ProjectCard } from "./ProjectCard";
 
-import projects from "../../data/projects.json";
 
-export const Project = () => {
-  return (
-    <section>
-      <h2>Projects</h2>
-      <div>
-        {
-          projects.map((project, id) => {
-            return <div key={id}>
-              <img src={getImageUrl(project.imageSrc)} alt={project.title}></img>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <ul>
-                {projects.skills.map(skill, id => {
-                  <li key={id}>
-                    {skill}
-                  </li>
-                })}
-              </ul>
+export const Projects = () => {
+  return <section className={styles.container}>
+    <h2 className={styles.title}>Projects</h2>
+    <div className={styles.projects}>
+      {
+        projects.map((project, id) => {
+          return (
+            <ProjectCard key={id} project={project}/>
+          )
 
-              <div>
-                <a href={project.source}>Source</a>
-              </div>
-            </div>
-          })
-        }
-      </div>
-    </section> 
-  );
-}
+        })
+      }
+    </div>
+  </section>;
+};
