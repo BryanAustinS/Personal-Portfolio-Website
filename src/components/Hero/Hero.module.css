@@ -1,6 +1,6 @@
 @import "../../vars.css/";
 
-.container{
+.container {
     position: relative;
     display: flex;
     align-items: center;
@@ -11,29 +11,97 @@
     margin-right: 10%;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: var(--color-text);
     z-index: 1;
+    margin-right: 100px;
 }
 
-.title{
-    font-size: 72px;
+.intro {
+    color: var(--color-teal);
+    font-family: 'SFMono';
+}
+
+.name {
+    font-size: 60px;
     font-weight: 900;
     margin-bottom: 33px;
-    font-family: var(--font-roboto);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 120%);
-    -webkit-text-fill-color: transparent;
+    font-family: var(--font-calibre);
+    color: var(--color-lightblue);
     -webkit-background-clip: text;
 }
 
-.description{
-    font-size: 30px;
-    font-family: var(--font-roboto);
+.description {
+    font-size: 20px;
+    font-family: var(--font-calibre);
     margin-bottom: 32px;
-    
+    color: var(--color-grayblue);
+}
+
+.cvlink {
+    font-family: 'Calibre';
+    color: var(--color-teal);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cvlink:hover {
+    text-decoration: underline;
+}
+
+.contactButton {
+  appearance: button;
+  background-color: var(--color-bg);
+  background-image: none;
+  border: 0.1px solid var(--color-teal);
+  border-radius: 4px;
+  box-shadow: var(--color-teal) 4px 4px 0 0, var(--color-bg) 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: var(--color-teal);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'SFMono';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.contactButton:focus {
+  text-decoration: none;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+}
+
+.contactButton:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.contactButton:not([disabled]):active {
+  box-shadow: var(--color-teal) 2px 2px 0 0, var(--color-bg) 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .contactButton {
+    padding: 12px 50px;
+  }
 }
 
 .contactBtn {
@@ -47,62 +115,46 @@
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.heroImg{
-    width: 50%;
+.heroImg {
+    width: 25%;
+    height: auto;
     z-index: 1;
-
+    border-radius: 50%;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    padding-left: 10px;
 }
 
-@keyframes floating{
-    0%{
-        transform: translate(0,0px);
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
     }
-    50%{
-        transform: translate(0,10px);
+    50% {
+        transform: translate(0, 10px);
     }
-    100%{
+    100% {
         transform: translate(0, -0px);
     }
 }
 
-.topBlur {
-    position: absolute;
-    width: 50vw;
-    height: 50vw;
-    min-width: 350px;
-    min-width: 350px;
-    top: -128px;
-    left: -10vw;
-    border-radius: 764px;
-    background: rgba(25,55,109,0.7);
-    filter: blur(100px);
-    z-index: 0;
-}
-
-.bottomBlur {
-    position: absolute;
-    width: 50vw;
-    height: 50vw;
-    min-width: 350px;
-    min-width: 250px;
-    top: 250px;
-    right: -25vw;
-    border-radius: 764px;
-    background: rgba(25,55,109,0.7);
-    filter: blur(100px);
-    z-index: 0;
-}
-
-@media screen and (max-width: 830px){
+@media screen and (max-width: 830px) {
     .container {
         flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
     }
 
-    .content{
+    .content {
         align-items: center;
+        margin-right: 0;
+        margin-top: 40px;
+    }
+
+    .heroImg {
+        width: 50%;
+        padding-left: 0;
+        margin-bottom: 20px;
     }
 }

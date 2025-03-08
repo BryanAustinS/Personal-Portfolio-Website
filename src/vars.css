@@ -1,11 +1,35 @@
 :root{
     /* Colors */
     --color-text: #ffffff;
+    --color-teal: #64f3c5;
     --color-primary: #576cbc;
     --color-secondary: #19376d;
     --color-dark: #0b2447;
-    --color-bg: #04152d;
+    --color-bg: #0a192f;
+    --color-lightblue: #ccd6f6;
+    --color-grayblue: #8892b0;
 
     /* Fonts */
     --font-roboto: "Roboto";
+    --font-sfmono: "SFMono";
+    --font-calibre: "Calibre";
+}
+
+@font-face {
+    font-family: 'SFMono';
+    src: url(./assets/fonts/SFMono/SFMonoRegular.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibre';
+    src: url(./assets/fonts/Calibre/TestCalibre-Regular-BF661746edbee52.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Calibre-Bold';
+    src: url(./assets/fonts/Calibre/TestCalibre-Bold-BF661746ed7c530.otf) format('truetype');
 }

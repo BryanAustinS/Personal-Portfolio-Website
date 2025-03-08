@@ -5,6 +5,8 @@ import { Experience } from './components/Experience/experience'
 import { Projects } from './components/Projects/projects'
 import { Contact } from './components/Contact/Contact'
 
+// run: npm run dev in terminal
+
 function App() {
 
 return (
