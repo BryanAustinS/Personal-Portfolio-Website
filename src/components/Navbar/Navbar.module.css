@@ -32,6 +32,7 @@
 .menuItems a {
   font-size: 20px;
   color: var(--color-lightblue);
+  font-weight: 600;
   text-decoration: none;
   font-family: 'SFMono';
 }
